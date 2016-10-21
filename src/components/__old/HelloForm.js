@@ -1,6 +1,8 @@
 import HelloSayer from './HelloSayer';
 import React from 'react';
 import style from '../styles/Helloform.scss';
+import styled from 'styled-components';
+import Title from './';
 
 class HelloForm extends React.Component {
     constructor(props) {
@@ -10,6 +12,7 @@ class HelloForm extends React.Component {
 
     render() {
         return (<div className="hello-form">
+            <Title>Howdy</Title>
             <input type="text" onChange={this.onChange.bind(this)} />
             <HelloSayer name={this.state.name} />
         </div>);

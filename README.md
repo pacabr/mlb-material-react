@@ -1,6 +1,6 @@
-# react-webpack-babel-kit
+# mlb-material-react
 
-A simple hello world using react, webpack, babel, es2015 & sass. 
+A collection of apps based on MLB's API using react, webpack, babel, es2015 & sass. 
 
 Compiles all the scripts & styles from `src` path to `dist`. The kit generates source maps by default in development mode.
 

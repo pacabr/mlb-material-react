@@ -10,11 +10,14 @@ function getDevTool() {
 
 module.exports = {
     entry: {
-        main: './src/scripts/main.js'
+        main: '/Users/pacabr/Documents/dev/react-material-mlb/src/main.js'
     },
     output: {
         filename: './dist/scripts/[name].js'
     },
+    resolve: {
+        modulesDirectories: ['src', 'node_modules']
+      },
     devtool: getDevTool(),
     module: {
         loaders: [
@@ -25,10 +28,10 @@ module.exports = {
             },
             {
                 test: /\.js$/,
-                exclude: /(node_modules|bower_components)/,
+                exclude: /(node_modules|bower_components|img)/,
                 loader: 'babel',
                 query: {
-                    presets: ['react', 'es2015']
+                    presets: ['react', 'es2015', 'stage-1']
                 }
             },
             {
@@ -38,7 +41,7 @@ module.exports = {
         ]
     },
     plugins: [
-        new ExtractTextPlugin('dist/styles/main.css', {
+        new ExtractTextPlugin('./dist/styles/main.css', {
             allChunks: true
         })
     ]

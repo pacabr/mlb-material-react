@@ -1,8 +1,8 @@
 {
-  "name": "helloworld",
-  "bin":{},
+  "name": "react-material-mlb",
+  "bin": {},
   "version": "1.0.0",
-  "description": "",
+  "description": "A collection of React apps based around MLB's API",
   "main": "main.js",
   "dependencies": {},
   "devDependencies": {
@@ -10,14 +10,17 @@
     "babel-loader": "^6.2.1",
     "babel-preset-es2015": "^6.3.13",
     "babel-preset-react": "^6.3.13",
+    "babel-preset-stage-1": "^6.16.0",
     "css-loader": "^0.23.1",
     "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.9.0",
     "node-sass": "^3.4.2",
     "react": "^0.14.5",
     "react-dom": "^0.14.5",
     "react-hot-loader": "^1.3.0",
     "sass-loader": "^3.1.2",
     "style-loader": "^0.13.0",
+    "styled-components": "^1.0.8",
     "webpack": "^1.12.10",
     "webpack-dev-server": "^1.14.0"
   },
@@ -26,7 +29,21 @@
     "start": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js --hot --progress --colors --inline",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["react", "babel", "es2015", "webpack", "sass", "es6", "hello world kit", "kit"],
-  "author": "srini.cug@gmail.com",
-  "license": "MIT"
+  "keywords": [
+    "react",
+    "babel",
+    "es2015",
+    "webpack",
+    "sass",
+    "es6",
+    "mlb",
+    "baseball",
+    "stats"
+  ],
+  "author": "PAC",
+  "license": "MIT",
+  "repository": {
+    "url": "none",
+    "type": "git"
+  }
 }
